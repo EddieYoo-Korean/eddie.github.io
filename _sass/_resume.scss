@@ -104,9 +104,13 @@
   }
 
   .icon {
-    height: 28px;
+    width: 28px; /* 너비를 28px로 고정 */
+    height: auto; /* 높이를 자동으로 조정 */
   }
 }
+
+
+
 
 .contact-button {
   @include border-radius(3px);
