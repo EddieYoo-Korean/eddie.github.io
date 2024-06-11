@@ -85,17 +85,20 @@
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
-    float: right;
+    display: flex; // flexbox 레이아웃 적용
+    justify-content: flex-end; // 우측 정렬
     border-top: none;
     padding-top: 0;
   }
 
   .icon-link-item {
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 2px; /* 아이콘 간격을 2px로 조정 */
+    margin-right: 2px; /* 아이콘 간격을 2px로 조정 */
   }
 
-  .icon-link { display: inline-block;
+  .icon-link {
+    display: inline-block;
 
     &:hover .icon path {
       fill: #333;
